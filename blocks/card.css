@@ -1,28 +1,55 @@
-.card {
-  width: 413px;
-}
-
 .card__image {
   height: 413px;
   width: 413px;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
 }
 
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 12px 0 0;
 }
 
 .card__title {
-  margin: 12px 0 0;
+  font-family: "Poppins Medium", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 10px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__love-button {
   background-image: url(../images/Love-Icon.svg);
   background-color: rgba(183, 124, 124, 0);
-  width: 23px;
-  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 23px 20px;
+  padding: 0 23px 20px 0;
   border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__love-button:hover {
+  background-image: url(../images/love-icon-hover.svg);
+  background-color: rgba(183, 124, 124, 0);
+}
+
+@media screen and (max-width: 627px) {
+  .card__image {
+    width: 288px;
+    height: 288px;
+  }
+  .card__love-button {
+    background-size: 20px 18px;
+    padding: 0 20px 18px 0;
+  }
+  .card__title {
+    font-size: 16px;
+    line-height: 1;
+  }
 }

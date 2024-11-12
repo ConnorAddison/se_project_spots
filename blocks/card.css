@@ -37,6 +37,7 @@
 .card__love-button:hover {
   background-image: url(../images/love-icon-hover.svg);
   background-color: rgba(183, 124, 124, 0);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {

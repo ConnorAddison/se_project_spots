@@ -10,6 +10,14 @@ Now take this image and cross reference it with your memories of being pulled aw
 
 It is currently in early early alpha stage and is funtionally only a teaser as to what it can be capable of in coming future release(s), as is this description of it, but if this kind of deeper and more fulfilling interpersonal experience through photography sounds fulfilling to you, then here is your means to this end!
 
+![Make a new profile and posts, or edit your curent profile!](./images/create.jpg)
+
+![Like other people's posts!](./images/interact.jpg)
+
+Useable on ![smartphone](./images/smartphone.jpg) and ![computer](./images/computer.jpg)!
+
+[Here is a video describing the project!](https://drive.google.com/file/d/1h6UywWaiA3tJqUl42426rEZiN7ZKUDJK/view?usp=sharing)
+
 ## Tech Stack
 
 - HTML

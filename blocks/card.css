@@ -4,6 +4,8 @@
   object-fit: cover;
   display: block;
   border-radius: 8px;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .card__content {
@@ -14,7 +16,7 @@
 }
 
 .card__title {
-  font-family: "Poppins Medium", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -22,21 +24,24 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: #212121;
+  max-width: 380px;
 }
 
 .card__love-button {
-  background-image: url(../images/Love-Icon.svg);
-  background-color: rgba(183, 124, 124, 0);
+  background-image: url(../images/love-button-hover.svg);
   background-repeat: no-repeat;
   background-size: 23px 20px;
-  padding: 0 23px 20px 0;
+  background-color: transparent;
+  width: 23px;
+  height: 20px;
   border: none;
   transition: all 0.3s ease-in-out;
+  opacity: 0.4;
 }
 
 .card__love-button:hover {
-  background-image: url(../images/love-icon-hover.svg);
-  background-color: rgba(183, 124, 124, 0);
+  opacity: 1;
   cursor: pointer;
 }
 

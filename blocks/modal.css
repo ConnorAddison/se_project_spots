@@ -39,12 +39,13 @@
   height: 40px;
   border: none;
   background: none;
-  background-image: url(../images/x-default.svg);
-  transition: background 0.3s ease-in-out;
+  background-image: url(../images/x-hover.svg);
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .modal__close-button:hover {
-  background-image: url(../images/x-hover.svg);
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -84,9 +85,6 @@
 
 .modal__input::placeholder {
   color: rgb(33, 33, 33, 0.3);
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
 }
 
 .modal__save-button {
@@ -95,6 +93,9 @@
   border-radius: 8px;
   background-color: #212121;
   color: #fcf5e5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
   transition: background 0.3s ease-in-out;
   border: none;
 }
@@ -126,6 +127,11 @@
   .modal__close-button {
     top: 12px;
     right: 12px;
+  }
+
+  .modal__input {
+    font-size: 16px;
+    line-height: 100%;
   }
 
   .modal__input::placeholder {

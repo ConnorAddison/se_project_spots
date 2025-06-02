@@ -93,8 +93,7 @@ function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameElement.textContent = editProfileNameInput.value;
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
-  closeEditProfileModal;
-  document.addEventListener("submit", closeEditProfileModal);
+  closeEditProfileModal();
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);

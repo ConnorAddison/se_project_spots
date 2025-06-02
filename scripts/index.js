@@ -37,12 +37,9 @@ const initialCard5 = {
 //   "initialCard5",
 // ];
 
-// edit profile
-
 const profileEditButton = document.querySelector(".profile__edit-button");
 
 const editProfileModal = document.querySelector("#edit-profile-modal");
-//filling the form fields vv
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input"
 );
@@ -55,7 +52,6 @@ const profileNameElement = document.querySelector(".profile__name");
 const profileDescriptionElement = document.querySelector(
   ".profile__description"
 );
-//filling the form fields ^^
 
 function openEditProfileModal() {
   editProfileNameInput.value = profileNameElement.textContent;
@@ -72,9 +68,6 @@ function closeEditProfileModal() {
 }
 
 editModalCloseButton.addEventListener("click", closeEditProfileModal);
-document.addEventListener("submit", closeEditProfileModal);
-
-// new post
 
 const newPostButton = document.querySelector(".profile__new-post-button");
 
@@ -86,8 +79,6 @@ function openNewPostModal() {
 
 newPostButton.addEventListener("click", openNewPostModal);
 
-// new post closing
-
 const newPostModalCloseButton = newPostModal.querySelector(
   ".modal__close-button"
 );
@@ -98,13 +89,12 @@ function closeNewPostModal() {
 
 newPostModalCloseButton.addEventListener("click", closeNewPostModal);
 
-//adding user inputted name and bio as placeholders for input bar
-
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameElement.textContent = editProfileNameInput.value;
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
-  closeNewPostModal;
+  closeEditProfileModal;
+  document.addEventListener("submit", closeEditProfileModal);
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
